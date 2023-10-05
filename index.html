@@ -1,22 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet"/>
-    <!-- link to greensock main library and scroll plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  </head>
-  <body>
+</head>
+    <body>
+        <h1 class="hidden">Portfolio</h1>
+        <header id="main-header" class="grid-con">
+            <div class="col-span-4">
+                <img src="images/logo_jy.svg" id="logo">
+            </div>
+            <nav class="col-span-full" id="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Guitars</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section class="spacer mobile">
+            <h2 class="hidden">Mobile classes</h2>
+            <p class="hidden">(Grid is equal to 4 columns at mobile)</p>
+            <h3 class="hidden">Span in a single row</h3>
+            <div class="grid-con">
+                <div class="col-span-1 box">Mobile</div>
+                <div class="col-span-3 col-end-5 box">
+                    Nav
+                </div>
+            </div>
+
+            <div class="grid-con">
+                <div class="col-span-4">
+                    <p>“Hi there! I’m Jonathan, bringing brands to life through fun and engaging motion design.
+                        From animated videos to ads and more, telling visual stories that grab attention.
+                        Ready to create something exciting together? Let’s connect!”</p>
+                </div>
+            </div>
+
+            <div class="video-con">
+                <video controls>
+                    <source src="/videos/Billy Beer Infomercial-Final-15sec5 Gold Tobacco.mp4" alt="portfolio">
+                </video>
+            </div>
+
+            <div class="grid-con">
+                <div class="col-span-4 box">Service 1</div>
+            </div>
+            <div class="grid-con">
+                <div class="col-span-4 box">Service 2</div>
+            </div>
+            <div class="grid-con">
+                <div class="col-span-4 box">Service 3</div>
+            </div>
+            <div class="grid-con">
+                <div class="col-span-4 box">Text</div>
+            </div>
+
+
+            
+           </div>
+            <div class="grid-con">
+                <div class="col-span-4 box" style="height: 100px;">Footer</div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="spacer tablet">
+            <h2 class="hidden">TABLET Classes</h2>
+            <p class="hidden">(Grid is equal to 12 columns at tablet)</p>
+            <h3 class="hidden">Span in a single row</h3>
+            <div class="grid-con">
+                <div class="m-col-span-2 box">Tablet</div>
+                <div class="m-col-span-10 box">Nav</div>
+            </div>
+
+                <div class="l-col-span-3">
+                    <p>“Hi there! I’m Jonathan, bringing brands to life through fun and engaging motion design.
+                        From animated videos to ads and more, telling visual stories that grab attention.
+                        Ready to create something exciting together? Let’s connect!”</p>
+                </div>
+
+                <div class="video-con">
+                    <video controls>
+                        <source src="/videos/Billy Beer Infomercial-Final-15sec5 Gold Tobacco.mp4" alt="portfolio">
+                    </video>
+                </div>
+                
+            <div class="grid-con">
+                <div class="m-col-span-4 box" style="height: 100px;">Service 1</div>
+                <div class="m-col-span-4 box" style="height: 100px;">Service 2</div>
+                <div class="m-col-span-4 box" style="height: 100px;">Service 2</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-12 box">Text</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-3 box" style="height: 150px;">Image 1</div>
+                <div class="m-col-span-3 box" style="height: 150px;">Image 2</div>
+                <div class="m-col-span-3 box" style="height: 150px;">Image 3</div>
+                <div class="m-col-span-3 box" style="height: 150px;">Image 4</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-6 box" style="height: 150px;">Image 5</div>
+                <div class="m-col-span-6 box" style="height: 150px;">Paragraph for image 5</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-6 box" style="height: 150px;">Paragraph</div>
+                <div class="m-col-span-6 box" style="height: 150px;">Paragraph</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-6 box" style="height: 150px;">Image 6</div>
+                <div class="m-col-span-6 box" style="height: 150px;">Paragraph for image 6</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-12 box">Text</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-6 box">Profile 1</div>
+                <div class="m-col-span-6 box">Profile 2</div>
+            </div>
+            <div class="grid-con">
+                <div class="m-col-span-6 box">Profile 3</div>
+                <div class="m-col-span-6 box">Profile 4</div>
+            </div>
+
+            <div class="hero-img">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="https://placehold.co/2200x840">
+                    <source media="(min-width:768px)" srcset="https://placehold.co/1024x600">
+                    <source media="(min-width:510px)" srcset="https://placehold.co/510x480">
+                    <img src="https://placehold.co/510x480" alt="Placeholder Image">
+                </picture>
+                <h2 class="hidden">Enfold Website</h2>
+           </div>
+
+            <div class="grid-con">
+                <div class="m-col-span-2 box">Logo</div>
+                <div class="m-col-span-2 box">Logo</div>
+                <div class="m-col-span-2 box">Logo</div>
+                <div class="m-col-span-2 box">Logo</div>
+                <div class="m-col-span-2 box">Logo</div>
+            </div>
+
+            <div class="grid-con">
+                <div class="m-col-span-12 box" style="height: 200px;">Footer</div>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+        
+        <section class="spacer desktop">
+            <h2 class="hidden">DESKTOP classes</h2>
+            <p class="hidden">(Grid is equal to 12 columns at desktop)</p>
+            <h3 class="hidden">Span single row</h3>
+
+            <div class="grid-con">
+                <div class="l-col-span-2 box">Desktop</div>
+                <div class="l-col-span-10 box">Nav</div>
+            </div>
+
+            <div class="l-col-span-3">
+                <p>“Hi there! I’m Jonathan, bringing brands to life through fun and engaging motion design.
+                    From animated videos to ads and more, telling visual stories that grab attention.
+                    Ready to create something exciting together? Let’s connect!”</p>
+            </div>
+
+            <div class="video-con">
+                <video controls>
+                    <source src="/videos/Billy Beer Infomercial-Final-15sec5 Gold Tobacco.mp4" alt="portfolio">
+                </video>
+            </div>
+
+            <div class="grid-con">
+                <div class="l-col-span-6 box" style="height: 250px;">Video 1</div>
+                <div class="l-col-span-6 box" style="height: 250px;">Video 2</div>
+            </div>
+
+            <div class="grid-con">
+                <div class="l-col-span-6 box" style="height: 250px;">Video 3</div>
+                <div class="l-col-span-6 box" style="height: 250px;">Video 4</div>
+            </div>
+
+            <div class="grid-con">
+                <div class="l-col-span-4 box" style="height: 200px;">Video 5</div>
+                <div class="l-col-span-4 box" style="height: 200px;">Video 6</div>
+                <div class="l-col-span-4 box" style="height: 200px;">Video 7</div>
+            </div>
+
+            <div class="grid-con">
+                <div class="l-col-span-4 box" style="height: 200px;">Video 8</div>
+                <div class="l-col-span-4 box" style="height: 200px;">Video 9</div>
+                <div class="l-col-span-4 box" style="height: 200px;">Video 10</div>
+            </div>
+
+            
+
+            <div class="grid-con" class="footer">
+                <div class="l-col-span-4 box" style="height: 50px;">2023. All Rights Reserved.</div>
+                <div class="l-col-span-1 l-col-end-11 box" style="height: 50px;">FB</div>
+                <div class="l-col-span-1 l-col-end-12 box" style="height: 50px;">IG</div>
+                <div class="l-col-span-1 l-col-end-13 box" style="height: 50px;">YT</div>
+            </div>
+        </section>
     
-
-
-
-    
-
-    <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+        <script src="js/main.js"></script>
+    </body>
 </html>

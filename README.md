@@ -17,7 +17,7 @@ Open index.html in your browser.
 5. Submit a pull request :D
 
 ## Credits
-Jonathan A. Yabes
+Jonathan Yabes
 
 ## License
 MIT License

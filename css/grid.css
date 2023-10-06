@@ -571,7 +571,7 @@
  
      .full-width-grid-con {
        display: grid;
-       grid-template-columns: 1fr minmax(0, 1920px) 1fr;
+       grid-template-columns: 1fr minmax(0, 4000px) 1fr;
      }
      
      .grid-con {
@@ -583,8 +583,6 @@
        padding-left: 20px;
        padding-right: 20px;
      }
- 
-     
  
      
  
@@ -768,8 +766,12 @@
      }
      
      .desktop {
-       display: block;
+       display: none;
      }
+
+     .xl-desktop {
+      display: block;
+    }
  
  }
  

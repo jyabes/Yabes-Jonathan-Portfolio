@@ -1,0 +1,263 @@
+@font-face {
+    font-family: cantarellregular;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/cantarel_regular-webfont.woff") format("woff"), url("../fonts/cantarel_regular-webfont.woff2") format("woff2");
+  }
+  body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e7e7e7;
+  }
+  
+  h2 {
+    font-family: "cantarellregular", helvetica, arial;
+    font-size: 20px;
+    color: #929292;
+    margin-bottom: 0px;
+  }
+  
+  p {
+    line-height: 1.2;
+    margin-bottom: 2px;
+    padding: 30px 50px 30px 50px;
+    font-size: 18px;
+  }
+  
+  #main-header {
+    background-color: #dbdbdb;
+    color: #ffe7e7;
+    padding: 0px;
+    text-align: center;
+  }
+
+  #main-header #logo {
+    display: block;
+    margin-top: 0px;
+    margin-left: 50px;
+    max-width: 140px;
+  }
+  #main-header #main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #main-header #main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 40px 10%;
+    margin: 0;
+  }
+  #main-header #main-nav ul li {
+    margin-right: 20px;
+  }
+  #main-header #main-nav ul li:last-child {
+    margin-right: 0;
+
+  }
+  #main-header #main-nav a {
+    color: #916800;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
+
+
+/* Style the links in the navigation menu */
+#main-nav ul li a {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Default text color */
+    position: relative; /* Enable relative positioning for the line */
+}
+
+/* Add a line at the bottom with a transition effect */
+#main-nav ul li a::before {
+    content: '';
+    width: 0;
+    height: 5px; /* Adjust the line thickness as needed */
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    background-color: #be2300; /* Red line color */
+    transition: width 0.5s; /* Add a transition for the line width */
+}
+
+/* Adjust the line width when hovering over a link */
+#main-nav ul li a:hover::before {
+    width: 100%; /* Expand the line to 100% on hover */
+}
+
+
+
+
+
+
+  
+
+
+  .box {
+    background-color: rgb(205, 242, 247);
+    color: rgb(27, 27, 27);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+
+.video-con.grid-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding: 0px;
+  }
+
+
+/* Style for the video itself */
+.video-con video {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+
+
+
+
+ /* Media query for mobile devices */
+ @media screen and (min-width: 767px) {
+    #main-header #main-nav ul {
+      justify-content:end;
+    }
+
+    .logo {
+      display: block;
+      height: 40px;
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
+  }
+  footer {
+    background-color: #202020;
+    color: #dcdcdc;
+    height: 40px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+  }
+
+  footer p {
+    line-height: 40px;
+  }
+  
+  .card {
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  #about-us {
+    margin-bottom: 40px;
+  }
+  
+  #founders section {
+    margin-bottom: 40px;
+  }
+
+  /* Media query for tablet devices */
+  @media screen and (min-width: 768px) {
+    #main-header #main-nav ul {
+      justify-content:end;
+    }
+    
+    #logo {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  footer {
+    background-color: #8e3131;
+    color: #505050;
+    height: 40px;
+  }
+  
+  footer p {
+    line-height: 40px;
+  }
+  
+  .card {
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  #about-us {
+    margin-bottom: 40px;
+  }
+  
+  #founders section {
+    margin-bottom: 40px;
+  }
+
+
+  
+  
+   /* Media query for desktop devices */
+   @media screen and (min-width: 1025px) {
+    #main-header #main-nav ul {
+      justify-content:center;
+    }
+
+   
+
+  .logo {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  footer {
+    background-color: #464646;
+    color: #dcdcdc;
+    height: 90px;
+    padding: 0px;
+    font-size: 20px;
+  }
+
+  
+  footer p {
+    line-height: 40px;
+  }
+  
+  .card {
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  #about-us {
+    margin-bottom: 40px;
+  }
+  
+  #founders section {
+    margin-bottom: 40px;
+  }
+
+/*# sourceMappingURL=main.css.map */

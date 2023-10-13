@@ -29,6 +29,7 @@
     font-size: 18px;
     color: #383838;
   }
+  
 
   .contact-paragraph {
 text-align: center;
@@ -94,6 +95,20 @@ font-size: 20px;
 
   .about-text {
     text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-container img {
+      max-width: 100%;
+      height: 80%;
+      display: block;
+      margin: 0 auto;
   }
 
   
@@ -158,7 +173,7 @@ font-size: 20px;
     background-color: rgb(174, 174, 174);
     color: rgb(27, 27, 27);
     border-radius: 5px;
-    padding: 80px; /* ------------- ADJUST ON FINAL FINAL DESIGN ------------- */
+    padding: 20px; /* ------------- ADJUST ON FINAL FINAL DESIGN ------------- */
     text-align: center;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -243,7 +258,7 @@ input[type="phone"] {
   cursor: pointer;
   border-radius: 5px;
   margin-top:10px;
-  margin-bottom:60px;
+
 }
 
 .contact-container {
@@ -265,7 +280,7 @@ input[type="phone"] {
   cursor: pointer;
   border-radius: 5px;
   margin-top:10px;
-  margin-bottom:60px;
+  margin-bottom:0px;
 }
 
 .contact-btn:hover {
@@ -288,6 +303,7 @@ input[type="phone"] {
  /* grid-template-rows: repeat(5, 1fr); */
   grid-column-gap: 10px;
   grid-row-gap: 10px; 
+  padding-bottom: 50px;
 }
 
 .div1 { grid-area: 1 / 10 / 2 / 12; }
@@ -357,16 +373,17 @@ textarea {
     }
   }
   footer {
-    background-color: #585858;
+    background-color: #939393;
     color: #dcdcdc;
     height: 400px;
     justify-content:center;
     display: flex;
     align-items: center;
+    text-align: center;
   }
 
   .footer2 {
-    background-color: #e86060;
+    background-color: #939393;
     color: #dcdcdc;
     height: 100px;
     justify-content:center;

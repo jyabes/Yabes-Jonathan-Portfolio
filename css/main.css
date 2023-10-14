@@ -203,6 +203,14 @@ font-size: 20px;
   margin: 50px;
 }
 
+.call-to-action {
+  font-size: 40px;
+  display: inline;
+  text-align: center;
+  padding:50px;
+  margin: 50px;
+}
+
 .title p {
   font-size: 20px;
   text-align: center;
@@ -258,14 +266,11 @@ input[type="phone"] {
   cursor: pointer;
   border-radius: 5px;
   margin-top:10px;
-
 }
 
-.contact-container {
-  text-align: center;
 
-}
 
+/* START contact form for index, about, and portfolio */
 .contact-btn-footer {
   background-color: #C78200;
   border: none;
@@ -283,19 +288,16 @@ input[type="phone"] {
   margin-bottom:0px;
 }
 
-.contact-btn:hover {
+.contact-btn-footer:hover {
   background-color: #931107;
 }
 
-/* CONTACT form 2 TEST */
-
-.contact-form1 {
-
-  width: 100%;
-  margin: 0 auto;
-  /* background-color: #ccc; */
-  padding: 30px;
+.contact-btn-footer:hover::after {
+  content: "Let's work together!"; /* Add the text content to the ::after pseudo-element */
 }
+/* END contact form for index, about, and portfolio */
+
+
 
 .contact-form2 {
   display: grid;
@@ -306,12 +308,12 @@ input[type="phone"] {
   padding-bottom: 50px;
 }
 
-.div1 { grid-area: 1 / 10 / 2 / 12; }
-.div2 { grid-area: 1 / 8 / 2 / 10; }
-.div3 { grid-area: 2 / 10 / 2 / 12; }
-.div4 { grid-area: 2 / 8 / 3 / 10; }
-.div5 { grid-area: 3 / 8 / 4 / 12; }
-.div6 { grid-area: 4 / 8 / 5 / 11; }
+.lname { grid-area: 1 / 10 / 2 / 12; }
+.fname { grid-area: 1 / 8 / 2 / 10; }
+.phone { grid-area: 2 / 10 / 2 / 12; }
+.youremail { grid-area: 2 / 8 / 3 / 10; }
+.yourmessage { grid-area: 3 / 8 / 4 / 12; }
+.button { grid-area: 4 / 8 / 5 / 11; }
 .contact-text { grid-area: 1 / 2 / 4 / 6; } 
 
 

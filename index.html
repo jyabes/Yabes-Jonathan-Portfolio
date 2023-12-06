@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <title>Welcome to my Portfolio</title>
     <script src="https://kit.fontawesome.com/2e48d723be.js" crossorigin="anonymous"></script>
 </head>
@@ -97,14 +99,19 @@ END : DESKTOP SECTION
                 </div>
 
                 <div class="grid-con">
-                    <section class="col-span-full" id="player-container">
-                        <video controls poster="images/placeholder.jpg">
-                            <source src="videoS/showreel-1.mp4" type="video/mp4">
-                            <source src="video/showreel-1.webm" type="video/webm">
-                            <p>You're using a very old browser, that doesn;t support video playback.</p>
-                        </video>
+                    <section class="col-span-full" id="video-container">
+                        <div class="video-wrapper">
+                            <video controls poster="images/jpg/placeholder-reel.jpg">
+                                <source src="videos/showreel-1.mp4" type="video/mp4">
+                                
+                                <p>You're using a very old browser that doesn't support video playback.</p>
+                            </video>
+                        </div>
                     </section>
                 </div>
+
+                
+                <!-- Plyr resources and browser polyfills are specified in the pen settings -->
 
 
                 <!-- <div class="grid-con">

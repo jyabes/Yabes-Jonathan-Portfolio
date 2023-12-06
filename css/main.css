@@ -4,6 +4,15 @@
   font-style: normal;
   src: url("../fonts/cantarel_regular-webfont.woff") format("woff"), url("../fonts/cantarel_regular-webfont.woff2") format("woff2");
 }
+
+:root {
+  --plyr-color-main: rgb(138,182,77);
+  --plyr-control-icon-size: 15px;
+  --plyr-control-radius: 20px;
+  --plry-font-family: "Helvetica Neue", Helvetica, sans-serif;
+  --plyr-controls-spacing: 15px;
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 0px;
@@ -40,14 +49,15 @@ p {
   padding: 0px;
   text-align: center;
 }
-#mobile-menu #logo {
+/* #mobile-menu #logo {
   display: block;
   padding: 30px 10px 30px 10px;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
   max-width: 180px;
-}
+} */
+
 #main-header #logo {
   display: block;
   padding: 30px 10px 30px 10px;
@@ -56,6 +66,7 @@ p {
   margin-right: 0px;
   max-width: 180px;
 }
+
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -183,7 +194,7 @@ p {
 .grid-con {
   display: grid;
   gap: 20px;
-  padding: 50px;
+  padding: 10px;
 }
 #media {
   display: grid;

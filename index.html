@@ -9,22 +9,7 @@
     <script src="https://kit.fontawesome.com/2e48d723be.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-		<div class="mobile-container">
-            <h2><span>J</span>Y</h2>
-			<button class="hamburger" id="menuToggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-			</button>
-		</div>
-	</header>
-	<nav id="menu">
-		<a href="#">Home</a>
-		<a href="#">Services</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Contact</a>
-	</nav>
+
 <!--------- END : MOBILE SECTION --------->
 
 <!--------- START : DESKTOP SECTION --------->
@@ -32,7 +17,9 @@
 <header id="main-header" class="col-span-full">
     <nav id="main-nav">
         <h2 class="hidden">desktop nav</h2>
-        <img src="images/svg/logo_ver2c.svg" id="logo" alt="logo_ver2">
+
+            <img src="images/svg/logo_ver2c.svg" id="logo" alt="logo_ver2">
+
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -102,20 +89,35 @@ END : DESKTOP SECTION
                 
                 <div class="grid-con">
                     <div class="col-span-full m-col-start-2 m-col-end-10 l-col-start-2 l-col-end-10 xl-col-start-2 xl-col-end-10">
-                        <h2 class="hidden">Introduction</h2>
+                        <h2 class="hidden">Introduction</h2><br><br>
                         <p>“Hi there! I’m Jonathan, bringing brands to life through fun and engaging 3D and motion design.
                             From animated videos to ads and more, telling visual stories that grab attention.
                             Ready to create something exciting together? Let’s connect!”</p>
                     </div>
                 </div>
+
                 <div class="grid-con">
-                    <h2 class="hidden">Showreel video</h2>
-                    <div class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 box">
-                         <video controls id="media">
-                          <!--  <source src="/videos/billy-beer-infomercial.mp4"> -->
-                        </video> 
-                    </div>
+                    <section class="col-span-full" id="player-container">
+                        <video controls poster="images/placeholder.jpg">
+                            <source src="videoS/showreel-1.mp4" type="video/mp4">
+                            <source src="video/showreel-1.webm" type="video/webm">
+                            <p>You're using a very old browser, that doesn;t support video playback.</p>
+                        </video>
+                    </section>
                 </div>
+
+
+                <!-- <div class="grid-con">
+                    <h2 class="hidden">Showreel video</h2>
+                    <div class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12">
+                        <div class="video-container">
+                            <video controls id="media">
+                            <source src="/videos/showreel-1.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div> -->
+
                 <br><br><br>
 
                 <footer>
@@ -147,6 +149,7 @@ END : DESKTOP SECTION
                     </div>
                 </footer>
 
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -10,3 +10,6 @@ menu_btn.addEventListener('click', function() {
 
 // PLAYER
 const player = new Plyr('video');
+
+
+

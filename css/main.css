@@ -13,18 +13,29 @@
   --plyr-controls-spacing: 15px;
 }
 
-.video-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+#reel-video {
+  padding: 0 70px 0 70px;
 }
 
-#video-container video {
-  width: 76%; /* Adjust the width as needed */
-  height: auto; /* Maintain the aspect ratio */
+.video-info {
+  margin-top: 0;
+  text-align: center;
+  background-color: #dfdfdf;
+  padding: 5px 40px 20px 40px;
+  font-size: 15px;
 }
 
+.video-info h3 {
+  font-size: 16px;
+  padding-top: 15px;  
+  padding-bottom: 5px;  
+  margin: 0;
+}
+
+.video-info p {
+  padding: 0;
+  font-size: 13px;
+}
 
 
 
@@ -43,10 +54,11 @@ h2 {
   margin-bottom: 0px;
 }
 p {
-  line-height: 1.2;
-  margin-bottom: 2px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0px 100px 20px 70px;
-  font-size: 18px;
+  font-size: 20px;
   color: #383838;
 }
 
@@ -217,12 +229,18 @@ p {
   max-width: 100%;
   padding: 10px;
 }
+
+.h3 {
+  padding: 0;
+  margin: 0;
+}
+
 .title h3 {
   font-size: 40px;
   display: inline;
   text-align: center;
-  padding: 50px;
-  margin: 50px;
+  padding: 10px;
+  margin: 10px;
 }
 .call-to-action {
   font-size: 40px;

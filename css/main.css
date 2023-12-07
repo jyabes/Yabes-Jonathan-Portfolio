@@ -37,6 +37,54 @@
   font-size: 13px;
 }
 
+/* hero
+/* Reset some default styles */
+body, figure, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Apply styles to the container */
+
+
+/* Style the video container */
+.hero-video {
+  position: relative;
+  grid-column: 2 / span 10;
+  overflow: hidden;
+}
+
+/* Style the video */
+.hero-video video {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* Hide controls by default */
+.hero-video video::-webkit-media-controls {
+  display: none !important;
+}
+
+
+
+/* Style the centered title */
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+
+
 
 
 body {
@@ -221,8 +269,15 @@ p {
 .grid-con {
   display: grid;
   gap: 20px;
-  padding: 10px;
+  padding: 20px;
 }
+
+#portvideos {
+  display: grid;
+  gap: 20px;
+  padding: 150px;
+}
+
 #media {
   display: grid;
   width: 100%;

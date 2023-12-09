@@ -24,11 +24,16 @@
                     </nav>
                 </header>
 
-                <!-- HERO SECTION -->
-                <div class="grid-con-ful box">
-                    <div class="col-span-full m-col-start-2 m-col-end-10 l-col-start-2 l-col-end-10 xl-col-start-2 xl-col-end-10">
-                        <p>CONTACT</p>
-                    </div>
+                <!--  hero  -->
+                <div class="grid-con-full">
+                    <section class="col-span-full hero-video">
+                        <video autoplay muted loop preload="auto">
+                            <source src="videos/hero2.mp4">
+                        </video>
+                        <div class="hero-title">
+                            <h2>Contact</h2>
+                        </div>
+                    </section>
                 </div>
 
                 <!-- BODY SECTION -->
@@ -66,25 +71,53 @@
 
             <!-- CONTACT FORM SECTION -->
 
-            <div class="contact-form2">
-                <div class="lname"> <input type="text" name="fullname" placeholder="Last Name" required></div>
-                <div class="fname"> <input type="text" name="lastname" placeholder="First Name" required></div>
-                <div class="phone"> <input type="email" name="email" placeholder="Phone" required></div>
-                <div class="youremail"> <input type="phone" name="subject" placeholder="Your Email" required></div>
-                <div class="yourmessage"> <textarea name="message" placeholder="Your Message" required></textarea></div>
-                <div class="button"> <button type="submit" class="contact-btn">Contact Me</button></div>
+            <div class="grid-con">
+                <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6 xl-col-start-2 xl-col-end-6">
+                    <div class="contact-text">
+                        <h2>Let's create something awesome.</h2><br><br>
+                        <p class="contact-paragraph">I can't wait to learn more about how we can partner to bring your ideas to life through engaging motion design and filmmaking.<br><br>
+                    </div>
+                    <div class="contact-text2">
+                        <p>London, Ontario, Canada<br>jonathanyabes@gmail.com</p>
+                    </div>
+                </div>
+            
+                <div class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12 xl-col-start-8 xl-col-end-12">
+                    <div class="contact-form2">
+                        <div class="lname"> <input type="text" name="fullname" placeholder="Last Name" required></div>
+                        <div class="fname"> <input type="text" name="lastname" placeholder="First Name" required></div>
+                        <div class="phone"> <input type="email" name="email" placeholder="Phone" required></div>
+                        <div class="youremail"> <input type="phone" name="subject" placeholder="Your Email" required></div>
+                        <div class="yourmessage"> <textarea name="message" placeholder="Your Message" required></textarea></div>
+                        <div class="button"> <button type="submit" class="contact-btn">Contact Me</button></div>
+                    </div>
+                </div>
+            </div>
 
-                <div class="contact-text">
-                    <h2>Let's create something awesome.</h2><br><br>
-                    <p class="contact-paragraph">I can't wait to learn more about how we can partner to bring your ideas to life through engaging motion design and filmmaking.</p></div>
+
+
+            <!--<section>
+                <div class="contact-form2">
+                    <div class="lname"> <input type="text" name="fullname" placeholder="Last Name" required></div>
+                    <div class="fname"> <input type="text" name="lastname" placeholder="First Name" required></div>
+                    <div class="phone"> <input type="email" name="email" placeholder="Phone" required></div>
+                    <div class="youremail"> <input type="phone" name="subject" placeholder="Your Email" required></div>
+                    <div class="yourmessage"> <textarea name="message" placeholder="Your Message" required></textarea></div>
+                    <div class="button"> <button type="submit" class="contact-btn">Contact Me</button></div>
+
+                    <div class="contact-text">
+                        <h2>Let's create something awesome.</h2><br><br>
+                        <p class="contact-paragraph">I can't wait to learn more about how we can partner to bring your ideas to life through engaging motion design and filmmaking.</p>
+                    </div>
                 </div> 
+            </section>-->
 
 
             <!-- FOOTER SECTION -->
             <footer class="footer2">
                 <h3 class="hidden">footer</h3>
-                <div class="grid-con">
-                    <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full">
+                <div class="grid-con-full">
+                    <div class="copyright">
                         <p>&copy; 2023 Jonathan Yabes. All Rights Reserved.</p>
                     </div>
                 </div>
@@ -92,7 +125,9 @@
         </section> 
 
 
-
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -14,10 +14,9 @@
 }
 
 #reel-video {
-  padding: 0 50px 0 50px;
+  padding: 0 50px 50px 50px;
   margin-top: 0;
 }
-
 
 .video-info {
   margin-top: 0;
@@ -28,7 +27,6 @@
 }
 
 .video-info h3 {
-  font-size: 16px;
   padding-top: 15px;  
   padding-bottom: 5px;  
   margin: 0;
@@ -38,6 +36,36 @@
   padding: 0;
   font-size: 13px;
 }
+
+.video-info a {
+  text-decoration: none;
+  color:#1f103f;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.video-info li {
+  padding-top: 15px;
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+.port-project {
+  display: grid;
+  align-items: center;
+}
+
+.video-info a:hover {
+  color: #000000;
+  transition: calc(.5s);
+}
+
+
+
+
+
+
+
 
 /* hero
 /* Reset some default styles */
@@ -79,6 +107,43 @@ body {
   color: #fff;
 }
 
+.project-title {
+  padding-top: 50px;
+}
+
+.project-title p {
+  color: #888888;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+
+
+
+.icon-arrow {
+  padding-bottom: 5vh;
+  margin: 0;
+  height: 20vh; 
+  font-size: 30px;
+  display: grid;
+  place-items: center;
+  
+}
+.arrow-link {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 164, 85)232; /* Add your preferred text color */
+  border-radius: 50%; /* Make it a circle */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.arrow-link:hover {
+  color: #a90000;
+  transform: scale(1.2); /* Add a slight scale effect on hover */
+}
 
 
 
@@ -116,6 +181,11 @@ p {
   padding: 0;
   margin: 0;
 }
+
+
+
+
+
 #main-header {
   background-color: #dbdbdb;
   color: #ffe7e7;
@@ -189,7 +259,7 @@ p {
   margin-right: 0;
 }
 #main-header #main-nav a {
-  color: #916800;
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
 }
@@ -219,6 +289,63 @@ p {
   color: #fff;
   text-decoration: none;
 }
+
+
+
+
+
+
+/* Add this CSS to your existing styles */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: #333; /* Add your preferred text color */
+  transition: color 0.3s ease; /* Add a smooth color transition effect */
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Adjust the height of the underline */
+  bottom: -2px;
+  left: 0;
+  background-color: #a90000; /* Add your preferred underline color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+a:hover {
+  color: #a90000; /* Change text color on hover */
+}
+
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
 .about-text {
   text-align: center;
   padding-bottom: 50px;
@@ -275,6 +402,7 @@ p {
   gap: 20px;
   padding: 50px 150px 50px 150px;
 }
+
 
 #media {
   display: grid;

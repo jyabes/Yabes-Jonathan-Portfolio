@@ -561,9 +561,10 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 10px;
   height: 150px;
   border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 

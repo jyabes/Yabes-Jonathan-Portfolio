@@ -52,6 +52,7 @@
                         <p>London, Ontario, Canada<br>jonathanyabes@gmail.com</p>
                     </div>
                 </div>
+            
                 <div class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12 xl-col-start-8 xl-col-end-12">
                     <div class="contact-form2">
                         <form method="post" action="sendmail.php">
@@ -83,16 +84,6 @@
                 </div>
             </div>
 
-            
-                <!-- <div class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12 xl-col-start-8 xl-col-end-12">
-                    <div class="contact-form2">
-                        <div class="lname"> <input type="text" name="fullname" placeholder="Last Name" required></div>
-                        <div class="fname"> <input type="text" name="lastname" placeholder="First Name" required></div>
-                        <div class="youremail"> <input type="email" name="subject" placeholder="Your Email" required></div>
-                        <div class="yourmessage"> <textarea name="comments" placeholder="Comments" required></textarea></div>
-                        <div class="button"> <button type="submit" class="contact-btn">Contact Me</button></div>
-                    </div>-->
-               
             <!-- FOOTER SECTION -->
             <footer class="footer2">
                 <h3 class="hidden">footer</h3>
@@ -107,5 +98,52 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
 <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<html>
+<head>
+</head>
+
+<body>
+<section>
+<form method="post" action="sendmail.php">
+
+    <label for="first_name">First Name: </label>
+    <input type="text" name="first_name" id="first_name">
+
+<br><br>
+
+    <label for="last_name">Last Name: </label>
+    <input type="text" name="last_name" id="last_name">
+
+    <br><br>
+
+    <label for="email">Email: </label>
+    <input type="text" name="email" id="email">
+
+    <br><br>
+
+    <label for="comments">Comments: </label>
+    <textarea name="comments" id="comments">comment here</textarea>
+
+    <br><br>
+
+    <input type="submit" value="send">
+    <br><br>    <br><br>
+</form>
+</section>
+<footer>
+<?php 
+echo date("F j, Y, g:i a"); 
+?>
+
+</footer>
 </body>
 </html>

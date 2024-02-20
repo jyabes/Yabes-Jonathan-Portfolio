@@ -28,27 +28,49 @@
                     </nav>
                 </header>
 
-                <section class="grid-con-full slide-in-bottom">
-                        <div class="project-title">
-                            <h2>Billy Beer</h2><br>
-                            <p>Tools: Cinema 4D | After Effects<br>
-                            For: Motion Design 2 | Fanshawe College<br>
-                            Role: 3D Motion Designer<br></p>
+                <!--  hero  -->
+                <section class="grid-con-full">
+                    <div class="col-span-full hero-video">
+                        <video autoplay muted loop preload="auto">
+                            <source src="videos/hero.mp4">
+                        </video>
+                        <div class="hero-title">
+                            <h2>PORTFOLIO</h2>
+                            <p>3D Motion Designer and Videography</p>
                         </div>
-                </section>
-
-                <section class="grid-con slide-in-bottom-2" id="reel-video">
-                    <div class="col-span-full">
-                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/891718590?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Billy Beer"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
                 </section>
 
-                <div class="icon-arrow slide-in-bottom-3">
-                    <a href="portfolio.html" class="arrow-link">
-                        <i class="fa-solid fa-arrow-up fa-xl"></i>
-                    </a>
-                </div>
 
+            
+<div class="container slide-in-bottom-2">
+    <h2 class="hidden">Gallery</h2>
+        <div class="gallery">
+        <?php
+            include 'db.php';
+
+            $sql = "SELECT * FROM projects";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="column">';
+                    echo '<div class="thumbnail">';
+                    echo '<a href="project-details.php?id=' . $row['id'] . '">';
+                    echo '<img src="' . $row['image_path'] . '" alt="' . $row['title'] . '">';
+                    echo '</a>';
+                    echo '</div>';
+                    echo '</div>';
+                }
+            } else {
+                echo "0 results";
+            }
+
+            $conn->close();
+            ?>
+            
+
+            
                 <footer>
                     <h3 class="hidden">Footer</h3>
                     <div class="grid-con">

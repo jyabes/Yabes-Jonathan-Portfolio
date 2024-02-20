@@ -6,20 +6,25 @@
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/hamburger-menu.css">
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    
+    
     <title>Portfolio: Jonathan Yabes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/2e48d723be.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
-
-<!--------- END : MOBILE SECTION --------->
 
 <!--------- START : DESKTOP SECTION --------->
 <section class="desktop-menu"> 
     <header id="main-header" class="col-span-full">
         <nav id="main-nav">
             <h2 class="hidden">desktop nav</h2>
+            <a href="index.html">
                 <img src="images/svg/logo_ver2c.svg" id="logo" alt="logo_ver2">
+            </a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -28,71 +33,41 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
         </nav>
+
+        
+    <button class="hamburger">
+        <div class="bar"></div>
+    </button>
+
     </header>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="case_study.html">Case Study</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </section>
 <!--------- END : DESKTOP SECTION --------->
 
 
 
-<!-------------------- START : THIS IS A COPY     
-START : MOBILE SECTION
-
-        <section class="mobile-menu"> 
-                <header id="main-header" class="col-span-full">
-                    <nav id="mobile-nav">
-                        <h2 class="hidden">mobile nav</h2>
-                        <img src="images/svg/logo_ver2c.svg" id="logo" alt="logo_ver2">
-                        <div id="menuToggle">
-                            <ul id="menu">
-                                <a href="index.html">Home</a>
-                                <a href="#">About</a>
-                                <a href="#">Portfolio</a>
-                                <a href="#">Contact</a>
-                            </ul>
-                            <button class="hamburger">
-                                <div class="bar"></div>
-                            </button>
-                        </div>
-                    </nav>
-                </header>
-                <ul id="mobile-nav2">
-                    <a href="index.html">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contact</a>
-                </ul>
-        </section> 
-END : MOBILE SECTION
-
-START : DESKTOP SECTION
-        <section class="desktop-menu"> 
-            <header id="main-header" class="col-span-full">
-                <nav id="main-nav">
-                    <h2 class="hidden">desktop nav</h2>
-                    <img src="images/svg/logo_ver2c.svg" id="logo" alt="logo_ver2">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                </nav>
-            </header>
-        </section>
-END : DESKTOP SECTION
-
--------------------->
                 
-                <div class="grid-con">
+                <div class="grid-con animate-in-left" id="introductionSection">
                     <div class="col-span-full m-col-start-2 m-col-end-10 l-col-start-2 l-col-end-10 xl-col-start-2 xl-col-end-10">
                         <h2 class="hidden">Introduction</h2><br><br>
                         <p>Hi there! I’m Jonathan, bringing brands to life through fun and engaging 3D motion design and videography.
                             <br>From animated videos to ads and more, telling visual stories that grab attention.
                             Ready to create something exciting together? Let’s connect!</p>
+
                     </div>
                 </div>
 
-                <div class="grid-con" id="reel-video">
+
+
+                <div class="grid-con animate-in-right" id="reel-video">
                     <div class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12">
                         <div style="padding:56% 0 0 0;position:relative;"><iframe id="reel-video" src="https://player.vimeo.com/video/891705838?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Showreel 2023"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
@@ -127,7 +102,7 @@ END : DESKTOP SECTION
                     </div>
                 </footer>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

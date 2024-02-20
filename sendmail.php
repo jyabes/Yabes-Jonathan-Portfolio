@@ -3,9 +3,9 @@
 require_once('connect.php');
 
 ///gather the form content
-$fname = $_POST['first_name'];
-$lname = $_POST['last_name'];
-$email = $_POST['email'];
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$email = $_POST['youremail'];
 $msg = $_POST['comments'];
 
 $errors = [];
@@ -59,14 +59,6 @@ header('Location: message_sent.php');
 
 }
 
-
-
-
-
-
-
-
 }
-
 
 ?>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,22 +60,22 @@
                         <form method="post" action="sendmail.php">
 
                             <label for="first_name" class="hidden">First Name: </label>
-                            <input type="text" name="first_name" id="first_name" placeholder="First name">
+                            <input type="text" name="first_name" id="fname" placeholder="First name">
                         
                         <br><br>
                         
                             <label for="last_name" class="hidden">Last Name: </label>
-                            <input type="text" name="last_name" id="last_name" placeholder="Last name">
+                            <input type="text" name="last_name" id="lname" placeholder="Last name">
                         
                             <br><br>
                         
                             <label for="email" class="hidden">Email: </label>
-                            <input type="text" name="email" id="email" placeholder="Email">
+                            <input type="text" name="email" id="youremail" placeholder="Email">
                         
                             <br><br>
                         
                             <label for="comments" class="hidden">Comments: </label>
-                            <textarea name="comments" id="comments">Message</textarea>
+                            <textarea name="comments" id="yourmessage">Message</textarea>
                         
                             <br><br>
                             <div class="button"> <button type="submit" class="contact-btn">Contact Me</button></div>

@@ -124,6 +124,11 @@ body {
   padding-bottom: 50px;
 }
 
+.introductionSection p {
+  padding: 0;
+  margin: 0;
+
+}
 
 
 
@@ -178,10 +183,12 @@ p {
   color: #5e5e5e;
 }
 
-
-
 .copyright p {
-  color: #ffffff;
+  color: #afafaf;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;;
 }
 
 .contact-paragraph {
@@ -375,11 +382,10 @@ a:hover::before {
   margin: 10px;
 }
 .call-to-action {
-  font-size: 40px;
+  font-size: 25px;
   display: inline;
   text-align: center;
-  padding: 50px;
-  margin: 50px;
+
 }
 .title p {
   font-size: 20px;
@@ -388,11 +394,19 @@ a:hover::before {
   line-height: 2;
 }
 .social-icons {
+  width: 100%;
   opacity: 100%;
   margin-left: 0px;
   margin: 0px;
   padding: 0px;
+
 }
+.social-icons i {
+
+  padding: 0 20px 0 20px;
+  color: rgb(144, 144, 144);
+}
+
 input[type="email"] {
   width: 100%;
   padding: 10px;
@@ -432,7 +446,7 @@ input[type="phone"] {
 .contact-btn-footer {
   background-color: #C78200;
   border: none;
-  color: white;
+  color: rgb(227, 227, 227);
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -546,6 +560,8 @@ footer {
   display: flex;
   align-items: center;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .footer2 {

@@ -852,11 +852,17 @@ footer {
     }
   }
 
+  .client-gallery {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
   #clients {
     justify-content: center;
     align-items: center;
     padding: 50px 0px 70px 0px;
-
   }
 
   .client-logo {

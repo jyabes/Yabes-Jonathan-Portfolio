@@ -14,7 +14,7 @@
 }
 
 #reel-video {
-  padding: 0 50px 50px 50px;
+  padding: 0 50px 20px 50px;
   margin-top: 0;
 }
 
@@ -876,7 +876,7 @@ footer {
 }
 
 #client-experiences {
-  padding-top: 80px;
+  padding-top: 40px;
   background-color: #d6d6d6;
 }
 
@@ -942,9 +942,49 @@ footer {
 
 #awards-icon {
   padding-bottom: 0;
+  
 }
 
 #tools-use {
   padding-bottom: 50px;
 }
 
+
+
+#colab {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin: 0px 0 50px 0;
+  text-align: center; 
+}
+
+.colab-title {
+  padding-bottom: 40px;
+  
+}
+
+#colab-logos {
+  width: 70%;
+  padding-bottom: 40px;
+  opacity: 60%;
+  /* mix-blend-mode: color-burn; */
+}
+
+#colab-logos img {
+  width: 70%; /* Make sure images fill their container */
+  height: auto; /* Maintain the aspect ratio of the images */
+  opacity: 0.6; /* Adjust opacity as needed */
+}
+
+#colab-logos2 {
+  height: 50%;
+  width: 67%;
+  padding: 0;
+  opacity: 60%;
+}
+
+#colab-logos2 img {
+  width: 50%; /* Make sure images fill their container */
+  height: auto; /* Maintain the aspect ratio of the images */
+  opacity: 0.6; /* Adjust opacity as needed */
+}

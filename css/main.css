@@ -615,9 +615,9 @@ footer {
 
 
 @media (max-width: 767px) {
-  .desktop-menu {
+  /* .desktop-menu {
     display: none;
-  }
+  } */
   .mobile-menu {
     display: block;
     text-align: right;
@@ -908,9 +908,11 @@ footer {
 
 
 #awards {
-  padding: 0;
-  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin: 0px 0 100px 0;
   text-align: center; 
+  background-color: #e3e3e3;
 }
 
 #awards img {
@@ -918,3 +920,25 @@ footer {
   margin: 0;
   gap: 0;
 }
+
+
+#awards p {
+  line-height: 1.2;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#awards-title {
+  padding-top: 0;
+}
+
+#awards-icon {
+  padding-bottom: 0;
+}
+
+#tools-use {
+  padding-bottom: 50px;
+}
+

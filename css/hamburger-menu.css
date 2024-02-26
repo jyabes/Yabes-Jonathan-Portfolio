@@ -77,7 +77,7 @@ display: flex;
 }
 
 #desktop-nav li {
-    padding-left: 20px;
+    padding-left: 45px;
 }
 
 #desktop-nav ul li {
@@ -136,6 +136,8 @@ display: flex;
     padding-top: 120px;
     transition: opacity 0.4s, visibility 0.4s;
 }
+
+
 
 
 
@@ -228,6 +230,12 @@ display: flex;
     #logo {
         display: flex;
     }
+
+    .body--secondary {
+        background-color: blue;
+    }
+
+    
 
 }
 

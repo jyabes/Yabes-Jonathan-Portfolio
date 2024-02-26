@@ -57,12 +57,14 @@
                 </div>
                 <div class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12 xl-col-start-8 xl-col-end-12">
                     <div class="contact-form2">
-                        <form method="post" action="sendmail.php">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="9e0c6f1c-9f48-4d1e-8e33-c7fbe50121ce">
+
 
                             <label for="first_name" class="hidden">First Name: </label>
                             <input type="text" name="first_name" id="first_name" placeholder="First name">
                         
-                        <br><br>
+                            <br><br>
                         
                             <label for="last_name" class="hidden">Last Name: </label>
                             <input type="text" name="last_name" id="last_name" placeholder="Last name">

@@ -1,12 +1,16 @@
+const desktopNav = document.getElementById('desktop-nav');
+const mobileMenu = document.querySelector('.mobile-nav');
+const menuBtn = document.querySelector('.hamburger');
 
-const menu_btn=document.querySelector('.hamburger');
-const mobile_menu=document.querySelector('.mobile-nav');
-
-menu_btn.addEventListener('click', function() {
-    console.log('Hamburger Clicked!');
-    menu_btn.classList.toggle('is-active');
-    mobile_menu.classList.toggle('is-active');
+menuBtn.addEventListener('click', function () {
+    desktopNav.classList.toggle('is-active'); // Toggle desktop navigation visibility
+    mobileMenu.classList.toggle('is-active'); // Toggle mobile menu visibility
+    menuBtn.classList.toggle('is-active'); // Toggle hamburger button state
 });
+
+
+
+
 
 // PLAYER
 const player = new Plyr('video');

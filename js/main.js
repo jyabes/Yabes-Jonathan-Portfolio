@@ -15,3 +15,33 @@ menuBtn.addEventListener('click', function () {
 // PLAYER
 const player = new Plyr('video');
 
+
+
+(() => {
+
+    gsap.registerPlugin(SplitText);
+
+    const split = new SplitText('.intro', {type: 'chars'});
+
+    const typingText =  gsap.timeline()
+    .from(split.chars, {
+        duration: .04,
+        autoAlpha: 0,
+        stagger: {
+            each: .02
+        }
+    });
+
+})();
+
+
+
+// your-scripts.js
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOMContentLoaded event triggered");
+    // Hide the preloader when the content is fully loaded
+    document.querySelector('.preloader').style.display = 'none';
+});
+
+
+

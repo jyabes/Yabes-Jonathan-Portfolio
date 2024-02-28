@@ -12,13 +12,12 @@ menuBtn.addEventListener('click', function () {
 
 
 
-// PLAYER
+// Player
 const player = new Plyr('video');
 
 
-
+// Gsap
 (() => {
-
     gsap.registerPlugin(SplitText);
 
     const split = new SplitText('.intro', {type: 'chars'});
@@ -31,15 +30,11 @@ const player = new Plyr('video');
             each: .02
         }
     });
-
 })();
 
-
-
-// your-scripts.js
+// Preloader
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOMContentLoaded event triggered");
-    // Hide the preloader when the content is fully loaded
     document.querySelector('.preloader').style.display = 'none';
 });
 

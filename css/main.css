@@ -441,7 +441,8 @@ input[type="phone"] {
   margin-top: 10px;
 }
 .contact-btn-footer {
-  background-color: #C78200;
+  
+  background-color: #931107;
   border: none;
   color: rgb(227, 227, 227);
   padding: 10px 30px;
@@ -454,12 +455,13 @@ input[type="phone"] {
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 0px;
+  transition: background-color 0.3s, color 0.3s;
 }
 .contact-btn-footer:hover {
-  background-color: #931107;
+  background-color: #C78200;
 }
 .contact-btn-footer:hover::after {
-  content: "Let's work together!";
+
 }
 .contact-form2 {
   /* display: grid; */

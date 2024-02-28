@@ -16,12 +16,13 @@
                 <header id="main-header" class="col-span-full">
                     <nav id="main-nav">
                         <h2 class="hidden">showreel</h2>
-                        <img src="images/svg/logo_ver2c.svg" id="logo" alt="logo_ver2">
+                        <a href="index.html">
+                            <img src="images/svg/logo_ver2c.svg" id="logo" alt="logo_ver2">
+                        </a>
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="case_study.html">Case Study</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -42,7 +43,7 @@
                 <br><br>
             </div>
 
-            <!-- CONTACT FORM SECTION -->
+            
 
             <div class="grid-con">
                 <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6 xl-col-start-2 xl-col-end-6">
@@ -54,28 +55,31 @@
                         <p>London, Ontario, Canada<br>jonathanyabes@gmail.com</p>
                     </div>
                 </div>
-            
+
+                <!-- CONTACT FORM SECTION -->
                 <div class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12 xl-col-start-8 xl-col-end-12">
                     <div class="contact-form2">
-                        <form method="post" action="sendmail.php">
+                        <form class="contact-form" action="send-email.php" method="post" >
+                            <input type="hidden" name="access_key" value="9e0c6f1c-9f48-4d1e-8e33-c7fbe50121ce">
+
 
                             <label for="first_name" class="hidden">First Name: </label>
-                            <input type="text" name="first_name" id="fname" placeholder="First name">
+                            <input type="text" name="first_name" id="first_name" placeholder="First name">
                         
-                        <br><br>
+                            <br><br>
                         
                             <label for="last_name" class="hidden">Last Name: </label>
-                            <input type="text" name="last_name" id="lname" placeholder="Last name">
+                            <input type="text" name="last_name" id="last_name" placeholder="Last name">
                         
                             <br><br>
                         
                             <label for="email" class="hidden">Email: </label>
-                            <input type="text" name="email" id="youremail" placeholder="Email">
+                            <input type="text" name="email" id="email" placeholder="Email">
                         
                             <br><br>
                         
                             <label for="comments" class="hidden">Comments: </label>
-                            <textarea name="comments" id="yourmessage">Message</textarea>
+                            <textarea name="comments" id="comments">Message</textarea>
                         
                             <br><br>
                             <div class="button"> <button type="submit" class="contact-btn">Contact Me</button></div>
@@ -86,7 +90,7 @@
                 </div>
             </div>
 
-            <!-- FOOTER SECTION -->
+ 
             <footer class="footer2">
                 <h3 class="hidden">footer</h3>
                 <div class="grid-con-full">
@@ -96,56 +100,10 @@
                 </div>
             </footer>
         </section> 
+        
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
 <script src="js/main.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-<html>
-<head>
-</head>
-
-<body>
-<section>
-<form method="post" action="sendmail.php">
-
-    <label for="first_name">First Name: </label>
-    <input type="text" name="first_name" id="first_name">
-
-<br><br>
-
-    <label for="last_name">Last Name: </label>
-    <input type="text" name="last_name" id="last_name">
-
-    <br><br>
-
-    <label for="email">Email: </label>
-    <input type="text" name="email" id="email">
-
-    <br><br>
-
-    <label for="comments">Comments: </label>
-    <textarea name="comments" id="comments">comment here</textarea>
-
-    <br><br>
-
-    <input type="submit" value="send">
-    <br><br>    <br><br>
-</form>
-</section>
-<footer>
-<?php 
-echo date("F j, Y, g:i a"); 
-?>
-
-</footer>
 </body>
 </html>

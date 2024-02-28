@@ -3,9 +3,9 @@
 require_once('connect.php');
 
 ///gather the form content
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$email = $_POST['youremail'];
+$fname = $_POST['first_name'];
+$lname = $_POST['last_name'];
+$email = $_POST['email'];
 $msg = $_POST['comments'];
 
 $errors = [];
@@ -45,7 +45,7 @@ if(empty($errors)) {
 
 //format and send these values in an email
 
-$to = 'j_yabes194706@fanshaweonline.ca';
+$to = 'jonathanyabes@gmail.com';
 $subject = 'Message from your Portfolio site!';
 
 $message = "You have received a new contact form submission:\n\n";
@@ -55,10 +55,9 @@ $message .= "Email: ".$email."\n\n";
 
 mail($to,$subject,$message);
 
-header('Location: message_sent.php');
+header('Location: thank_you.php');
 
 }
-
 }
 
 ?>

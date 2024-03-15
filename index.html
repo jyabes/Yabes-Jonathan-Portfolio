@@ -25,10 +25,10 @@
 
 </head>
 <body>
-
+<!--------- preloader
     <div class="preloader">
         <img src="images/svg/tube-spinner.svg" alt="Loading">
-    </div>
+    </div> --------->
 
     <!--------- START : DESKTOP MENU --------->
     <div class="col-span-full"> 
@@ -54,11 +54,12 @@
 
     <!--------- START : MOBILE MENU --------->
     <header id="main-header" class="col-span-full">
-            <button class="hamburger">
-                <div class="bar"></div>
-            </button>
-            
-        <nav class="mobile-nav"> 
+        <img src="images/svg/logo_ver2c.svg" id="logo-mobile" alt="logo_ver2" class="logo-desktop">
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    
+        <nav class="mobile-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -67,6 +68,9 @@
             </ul>
         </nav>
     </header>
+
+    <!--------- END : MOBILE MENU --------->
+    
 
     <section id="introductionSection">
         <div class="grid-con">
@@ -218,6 +222,13 @@
         </div>
     </section>
 
+    <div class="icon-arrow slide-in-bottom-3">
+        <a href="#" class="arrow-link">
+            <i class="fa-solid fa-arrow-up fa-xl"></i>
+        </a>
+        <h3>Back to Top</h3>
+    </div>
+
 
     <footer>
         <h3 class="hidden">Footer</h3>
@@ -235,13 +246,13 @@
                             <button type="submit" class="contact-btn-footer">Submit</button></div>
                         </form><br>
                         <div class="social-icons">
-                            <a href="index.html">
+                            <a href="index.html" target="_blank">
                                 <i class="fa-brands fa-square-facebook fa-fade"></i>
                             </a>
-                            <a href="https://www.instagram.com/yabesfilms/">
+                            <a href="https://www.instagram.com/yabesfilms/" target="_blank">
                                 <i class="fa-brands fa-square-instagram fa-fade"></i>
                             </a>
-                            <a href="https://vimeo.com/yabesfilms">
+                            <a href="https://vimeo.com/yabesfilms" target="_blank">
                                 <i class="fa-brands fa-vimeo fa-fade"></i>
                             </a>
                         </div>
@@ -261,5 +272,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script defer src="js/SplitText.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/scrollToTop.js"></script>
 </body>
 </html>

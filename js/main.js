@@ -10,12 +10,6 @@ menuBtn.addEventListener('click', function () {
 
 
 
-
-
-// Player
-const player = new Plyr('video');
-
-
 // Gsap
 (() => {
     gsap.registerPlugin(SplitText);
@@ -37,6 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("DOMContentLoaded event triggered");
     document.querySelector('.preloader').style.display = 'none';
 });
-
 
 

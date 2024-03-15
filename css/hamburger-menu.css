@@ -8,18 +8,13 @@ display: flex;
     justify-content: center;
   }
 
-  
 
-  #main-nav #logo {
-    width: 150px;
-  }
-
-  #main-header #logo {
-    padding: 0px 10px 30px 10px;
+  #main-header #logo-mobile {
+    padding: 10px 10px 10px 20px;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    max-width: 180px;
+    width: 150px;
   }
 
   #main-header #main-nav a {
@@ -235,7 +230,17 @@ display: flex;
         background-color: blue;
     }
 
-    
-
 }
 
+
+@media (max-width: 767px) {
+    #main-header #logo {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo-desktop {
+        display: none;
+    }
+}

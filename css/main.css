@@ -91,6 +91,10 @@ body {
   padding: 0;
 }
 
+.sonicboom-body {
+  background-color: #000000;
+}
+
 /* Apply styles to the container */
 
 
@@ -161,6 +165,7 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+
 
 #info {
   padding-bottom: 30px;
@@ -420,12 +425,13 @@ a:hover::before {
 }
 
 
-#media {
+.media {
   display: grid;
   width: 100%;
   max-width: 100%;
-  padding: 10px;
+
 }
+
 
 .h3 {
   padding: 0;
@@ -812,6 +818,7 @@ footer {
 #galleryTwo {
   text-align: center;
   padding: 0 20px 0 20px;
+  margin-top: 50px;
 }
 
 #galleryTwo img {
@@ -823,6 +830,7 @@ footer {
   width: 100%;
   height: auto;
 }
+
 
 
 
@@ -1191,3 +1199,14 @@ opacity: 100%;
 }
 
 /* TESTING */
+
+
+#explode-view1 {
+  max-width: 100%;
+  /* width: 100vw; */
+}
+
+#explode-view2 {
+  max-width: 100%;
+  /* width: 100vw; */
+}

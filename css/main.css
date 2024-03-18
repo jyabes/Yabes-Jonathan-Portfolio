@@ -145,6 +145,7 @@ body {
 
 .grid-con #project-title  {
   padding-top: 30px;
+  
 }
 
 #project-title h2 {
@@ -187,9 +188,21 @@ body {
   margin: 0;
 }
 
+.arrow-list {
+  justify-content: center; /* Center items horizontally */
+  list-style: none; /* Remove default list styles */
+  
+}
+
+.arrow-list li {
+  margin: 0 10px; /* Optional: Add spacing between arrows */
+  
+}
+
+
 .icon-arrow {
   color: #717171;
-  padding: 20vh;
+  padding: 10vh;
   margin: 0;
   font-size: 20px;
   display: grid;
@@ -203,7 +216,7 @@ body {
 }
 
 .arrow-link {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   color: #3d3d3d;
   display: flex;
   align-items: center;
@@ -211,6 +224,11 @@ body {
   color: rgb(255, 164, 85)232;
   text-decoration: none;
   transition: background-color 0.3s ease;
+}
+
+.arrows li i {
+  color: #3d3d3d;
+  padding: 70px;
 }
 
 
